@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Outsourcing de Facturación Online</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #f9fafb;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #0d47a1;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+    .container {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #0d47a1;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .services, .advantages {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+    .card {
+      background-color: #e3f2fd;
+      flex: 1 1 280px;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(13,71,161,0.15);
+      text-align: center;
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #0d47a1;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #1976d2;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+      margin-top: 1rem;
+    }
+    .btn:hover {
+      background-color: #115293;
+    }
+    form {
+      max-width: 480px;
+      margin: 0 auto 2rem auto;
+      display: flex;
+      flex-direction: column;
+    }
+    input, textarea {
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+      resize: vertical;
+    }
+    footer {
+      background-color: #0d47a1;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+
+    /* Responsive */
+    @media(max-width: 600px) {
+      .services, .advantages {
+        flex-direction: column;
+      }
+      .card {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Tu Aliado en Facturación Online</h1>
+  <p>Outsourcing profesional y eficiente para tu empresa</p>
+</header>
+
+<div class="container">
+
+  <section>
+    <h2>Servicios</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Facturación Electrónica</h3>
+        <p>Emitimos, enviamos y almacenamos tus facturas conforme a la normativa vigente.</p>
+      </div>
+      <div class="card">
+        <h3>Soporte Contable</h3>
+        <p>Asistencia con reportes, conciliaciones y preparación de documentos fiscales.</p>
+      </div>
+      <div class="card">
+        <h3>Atención Personalizada</h3>
+        <p>Soporte rápido por correo o WhatsApp según tus necesidades.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>¿Por qué elegirnos?</h2>
+    <div class="advantages">
+      <div class="card" style="background-color:#bbdefb;">
+        <p>✅ Ahorro de tiempo y costos</p>
+        <p>✅ Cumplimiento legal garantizado</p>
+        <p>✅ Enfócate en tu negocio, nosotros nos ocupamos del resto</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contáctanos</h2>
+    <form id="contactForm">
+      <input type="text" name="nombre" placeholder="Nombre completo" required />
+      <input type="email" name="email" placeholder="Correo electrónico" required />
+      <textarea name="mensaje" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
+      <button class="btn" type="submit">Enviar mensaje</button>
+    </form>
+  </section>
+
+</div>
+
+<footer>
+  <p>&copy; 2025 TuNombre o Empresa - Todos los derechos reservados</p>
+</footer>
+
+<script>
+  // Simple alerta para simular envío de formulario
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('¡Gracias por contactarnos! Pronto te responderemos.');
+    this.reset();
+  });
+</script>
+
+</body>
+</html>
