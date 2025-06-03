@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FD Administración</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    header {
+      background-image: url('https://images.unsplash.com/photo-1607746882042-944635dfe10e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.3em;
+      font-weight: 300;
+    }
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+    .card h3 {
+      margin-top: 0;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    input, textarea, button {
+      padding: 12px;
+      font-size: 1em;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #e9ecef;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>FD Administración</h1>
+    <p>Gestión, facturación y soporte digital para tu negocio</p>
+  </header>
+
+  <section>
+    <h2 style="text-align:center;">Servicios</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Facturación Online</h3>
+        <p>Emisión y control de facturas electrónicas, seguimiento de cobros y reportes mensuales.</p>
+      </div>
+      <div class="card">
+        <h3>Gestión Administrativa</h3>
+        <p>Organización de documentos, soporte general y tareas de back office.</p>
+      </div>
+      <div class="card">
+        <h3>Atención al Cliente</h3>
+        <p>Respuesta a correos, gestión de agendas, soporte remoto a tus clientes.</p>
+      </div>
+      <div class="card">
+        <h3>Digitalización de Documentos</h3>
+        <p>Clasificación, escaneo y archivo digital de toda tu documentación.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 style="text-align:center;">Contacto</h2>
+    <form action="https://formsubmit.co/fdadministracion@gmail.com" method="POST">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu correo electrónico" required>
+      <textarea name="mensaje" placeholder="Tu mensaje..." rows="5" required></textarea>
+      <button type="submit">Enviar mensaje</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 FD Administración – Todos los derechos reservados
+  </footer>
+
+</body>
+</html>
